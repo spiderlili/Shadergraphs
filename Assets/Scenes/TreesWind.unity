@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 73c6d128aa71046c88d426ca2747117d, type: 2}
     - target: {fileID: -927199367670048503, guid: 18caba8fbc4564016af3c0301d557b0d, type: 3}
       propertyPath: m_Name
-      value: PalmTree_UnityTechnologies
+      value: PalmTree_UnitySampleModel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18caba8fbc4564016af3c0301d557b0d, type: 3}

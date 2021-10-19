@@ -269,7 +269,7 @@
             "r": 1.0,
             "g": 0.8489028215408325,
             "b": 0.0,
-            "a": 0.0
+            "a": 1.0
         },
         "mode": 0
     }
@@ -572,7 +572,7 @@
             "r": 1.0,
             "g": 0.49820756912231448,
             "b": 0.0,
-            "a": 0.0
+            "a": 1.0
         },
         "mode": 0
     }
@@ -639,13 +639,13 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7de8666c074f4a918ee891443cdb0ab9",
     "m_Title": "uv as weighting for wind animation",
-    "m_Content": "use case: generally only suitable for grass quads\nUV unwrap requirements: [0 - 1] range,  so that the movement weighting from the grass's root to grass's top's is a linear transition from [0 - 1]. Use a sinewave to create simple animation movements.\n\nexample: \tfloat4 newPos = v.vertex; \nnewPos.xyz += _Wind.xyz * v.texcoord.y * _BendingFactor;",
+    "m_Content": "use case: generally only suitable for grass quads\nUV unwrap requirements: [0 - 1] range,  so that the movement weighting from the grass's root to grass's top's is a linear transition from [0 - 1]. Use a sinewave to create simple animation movements.\n\nexample: \tfloat4 newPos = v.vertex; \nnewPos.xyz += _Wind.xyz * v.texcoord.y * _BendingFactor;\n\nmake use of the uv gradient from 1 to 0 (use the debug uv texture) for linear interpolation",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1349.0,
-        "y": -75.5,
+        "x": -1348.0,
+        "y": -115.0,
         "width": 308.0,
         "height": 648.0
     },
@@ -698,10 +698,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1327.5001220703125,
-            "y": 205.0,
+            "x": -1309.0001220703125,
+            "y": 146.5,
             "width": 208.0,
-            "height": 312.5
+            "height": 312.5000305175781
         }
     },
     "m_Slots": [

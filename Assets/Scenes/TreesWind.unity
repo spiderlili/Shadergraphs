@@ -174,6 +174,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 18caba8fbc4564016af3c0301d557b0d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 398ebdd6288df4b58960e046cc456759, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 18caba8fbc4564016af3c0301d557b0d, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 62c02a79be9a2486ebc6cb405bc87061, type: 2}
     - target: {fileID: -927199367670048503, guid: 18caba8fbc4564016af3c0301d557b0d, type: 3}
       propertyPath: m_Name
       value: PalmTree_UnityTechnologies

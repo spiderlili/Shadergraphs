@@ -52,6 +52,9 @@
     "m_StickyNoteDatas": [
         {
             "m_Id": "a21c137daf5f42c98c2d43efb5ed56d7"
+        },
+        {
+            "m_Id": "67fe674d5bfd46f889e1bab12411e436"
         }
     ],
     "m_Edges": [
@@ -244,8 +247,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1032.5,
-            "y": 75.49999237060547,
+            "x": -933.0001220703125,
+            "y": 94.00000762939453,
             "width": 208.0,
             "height": 127.00000762939453
         }
@@ -483,6 +486,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "67fe674d5bfd46f889e1bab12411e436",
+    "m_Title": "uv as weighting for wind animation",
+    "m_Content": "use case: generally only suitable for grass quads\nUV unwrap requirements: [0 - 1] range,  so that the movement weighting from the grass's root to grass's top's is a linear transition from [0 - 1]. Use a sinewave to create simple animation movements.\n\nexample: \tfloat4 newPos = v.vertex; \nnewPos.xyz += _Wind.xyz * v.texcoord.y * _BendingFactor;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1268.0,
+        "y": 13.0,
+        "width": 248.630615234375,
+        "height": 583.3963623046875
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "6b771d1371d3427fbe06bd39d073a20b",
     "m_Id": 4,
@@ -547,8 +570,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1032.0,
-            "y": -87.0000228881836,
+            "x": -935.0001220703125,
+            "y": -48.499996185302737,
             "width": 208.0,
             "height": 127.00000762939453
         }
@@ -675,8 +698,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1230.0,
-            "y": 251.99996948242188,
+            "x": -1244.0001220703125,
+            "y": 256.5000305175781,
             "width": 208.0,
             "height": 312.5000305175781
         }
@@ -769,10 +792,10 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -906.5,
-        "y": 261.0,
+        "x": -934.5,
+        "y": 263.5,
         "width": 200.0,
-        "height": 235.5
+        "height": 231.0
     },
     "m_Group": {
         "m_Id": ""
@@ -902,8 +925,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -900.0000610351563,
-            "y": 306.0,
+            "x": -902.5000610351563,
+            "y": 320.0,
             "width": 119.0,
             "height": 149.00001525878907
         }

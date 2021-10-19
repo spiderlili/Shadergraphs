@@ -52,6 +52,9 @@
     "m_StickyNoteDatas": [
         {
             "m_Id": "a21c137daf5f42c98c2d43efb5ed56d7"
+        },
+        {
+            "m_Id": "7de8666c074f4a918ee891443cdb0ab9"
         }
     ],
     "m_Edges": [
@@ -633,6 +636,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "7de8666c074f4a918ee891443cdb0ab9",
+    "m_Title": "uv as weighting for wind animation",
+    "m_Content": "use case: generally only suitable for grass quads\nUV unwrap requirements: [0 - 1] range,  so that the movement weighting from the grass's root to grass's top's is a linear transition from [0 - 1]. Use a sinewave to create simple animation movements.\n\nexample: \tfloat4 newPos = v.vertex; \nnewPos.xyz += _Wind.xyz * v.texcoord.y * _BendingFactor;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1349.0,
+        "y": -75.5,
+        "width": 308.0,
+        "height": 648.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "8af288270b154febae4355c11ec46430",
     "m_Group": {
@@ -675,10 +698,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1230.0,
-            "y": 251.99996948242188,
+            "x": -1327.5001220703125,
+            "y": 205.0,
             "width": 208.0,
-            "height": 312.5000305175781
+            "height": 312.5
         }
     },
     "m_Slots": [
@@ -769,8 +792,8 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -906.5,
-        "y": 261.0,
+        "x": -1015.5,
+        "y": 264.0,
         "width": 200.0,
         "height": 235.5
     },
@@ -902,10 +925,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -900.0000610351563,
-            "y": 306.0,
-            "width": 119.0,
-            "height": 149.00001525878907
+            "x": -985.0,
+            "y": 320.5,
+            "width": 118.99999237060547,
+            "height": 149.0
         }
     },
     "m_Slots": [

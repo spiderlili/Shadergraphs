@@ -105,12 +105,12 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _FresnelPower: 1
-    - _GlitterOffset: 0
+    - _GlitterOffset: 0.295
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NoiseRotationSpeed: 0
+    - _NoiseRotationSpeed: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0

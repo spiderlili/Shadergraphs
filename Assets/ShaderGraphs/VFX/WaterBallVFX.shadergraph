@@ -26,6 +26,12 @@
         },
         {
             "m_Id": "6342bf70da3a43dba6dbaed6d17d1f37"
+        },
+        {
+            "m_Id": "91fa57efd5474dbe91e28d1562e91236"
+        },
+        {
+            "m_Id": "776efd6131c244fcb7f1ab3afee99e55"
         }
     ],
     "m_Keywords": [],
@@ -555,6 +561,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "a9ea87e758d946d3bca047d8a40d1fe3"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "804b6f98e44f4a4991c08583d36b7857"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "b4a2734852a5425d8f84ba85bcd6d896"
                 },
                 "m_SlotId": 0
             }
@@ -3681,6 +3701,30 @@
 }
 
 {
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "776efd6131c244fcb7f1ab3afee99e55",
+    "m_Guid": {
+        "m_GuidSerialized": "e3928c3f-b0a8-412c-915e-8b4c18d84ef2"
+    },
+    "m_Name": "SpecularColor",
+    "m_DefaultReferenceName": "Color_776efd6131c244fcb7f1ab3afee99e55",
+    "m_OverrideReferenceName": "_SpecularColor",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+    },
+    "m_ColorMode": 0
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GradientNoiseNode",
     "m_ObjectId": "777e815ce1f24a1f8095e26db982dd24",
@@ -4091,7 +4135,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"af71232a452084b83ad5b8aff63009c6\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_Modifiable": true,
@@ -4338,6 +4382,29 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "VertexDescription.Normal"
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "91fa57efd5474dbe91e28d1562e91236",
+    "m_Guid": {
+        "m_GuidSerialized": "d95f6c40-9fbb-484d-b550-9551686135fb"
+    },
+    "m_Name": "Smoothness",
+    "m_DefaultReferenceName": "Vector1_91fa57efd5474dbe91e28d1562e91236",
+    "m_OverrideReferenceName": "_Smoothness",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 1.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -5936,7 +6003,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "e4543db823f9478d8cfa1d7d95401e3b",
     "m_Title": "Normals",
-    "m_Content": "Write something here",
+    "m_Content": "Set NormalTiling to half as small",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {

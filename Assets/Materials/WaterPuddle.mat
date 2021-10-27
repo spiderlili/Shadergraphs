@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 94755ab88b81e4a0585d3c37f167fd1e, type: 3}
+        m_Texture: {fileID: 2800000, guid: af71232a452084b83ad5b8aff63009c6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PuddleTexture2D:
@@ -57,11 +57,11 @@ Material:
     - Vector1_ddb6293edce643b0ad001ef8e4bfe970: 0
     - Vector1_f64f7fc51f514d1fa0c302cd1c54ace5: 0
     - _Alpha: 0.5
-    - _Distortion: 0.01
+    - _Distortion: 0.05
     - _NormalStrength: 1
     - _NormalTiling: 1
-    - _Smoothness: 0.1
-    - _SpecularFloat: 0.1
+    - _Smoothness: 1
+    - _SpecularFloat: 1
     - _TextureNormalOffset: 0.7
     - _TextureNormalStrength: 7
     m_Colors: []

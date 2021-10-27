@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class WaterBallController : MonoBehaviour
@@ -15,9 +16,12 @@ public class WaterBallController : MonoBehaviour
         if (mainCamera == null) {
             mainCamera = Camera.main;
         }
-    }
 
-    // Update is called once per frame
+        if (creationPoint == null) {
+            creationPoint = this.transform;
+        }
+    }
+    
     void Update()
     {
         if (isUpdating) {
@@ -28,11 +32,12 @@ public class WaterBallController : MonoBehaviour
             if (!IsWaterBallCreated()) {
                 CreateWaterBall();
             } else {
+                // Raycast to the mouseclick point and throw the water ball
                 Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit)) {
                     if (waterball != null) {
-                        ThrowWaterBall(hit.point);
+                        ThrowWaterBall(hit.point); 
                     }
                 }
             }

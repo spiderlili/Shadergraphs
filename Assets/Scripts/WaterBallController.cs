@@ -52,6 +52,7 @@ public class WaterBallController : MonoBehaviour
     public void CreateWaterBall()
     {
         waterball = Instantiate(waterballPrefab, creationPoint.position, Quaternion.identity);
+        waterball.ScaleUp();   
     }
 
     public void ThrowWaterBall(Vector3 pos)

@@ -7,11 +7,12 @@ public class WaterBall : MonoBehaviour
 {
     [SerializeField] private ParticleSystem waterBallParticleSystem;
     [SerializeField] private AnimationCurve speedAnimationCurve;
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 0.4f;
     [SerializeField] private ParticleSystem splashPrefab;
     [SerializeField] private ParticleSystem spillPrefab;
     [SerializeField] private float stopThrowDistanceThresholdFromTarget = 0.4f;
-    [SerializeField] private float spillWaterOnHitAngleThreshold = 30f; 
+    [SerializeField] private float spillWaterOnHitAngleThreshold = 30f;
+    [SerializeField] private float scaleUpSpeed = 1.0f;
     
     // Start the throw animation
     public void Throw(Vector3 target)
@@ -19,9 +20,26 @@ public class WaterBall : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(ThrowCoroutine(target));
     }
+
+    // TODO: Scale up the waterball when first summoned
+    public void ScaleUp()
+    {
+        StartCoroutine(ScaleUpCoroutine());
+    }
+
+    IEnumerator ScaleUpCoroutine()
+    {
+        float lerp = 0;
+        Vector3 startScale = Vector3.zero;
+        Vector3 endScale = new Vector3(1.0f, 1.0f, 1.0f);
+        while (lerp < 1) {
+            transform.localScale = Vector3.Lerp(startScale, endScale, lerp);
+            lerp += Time.deltaTime * scaleUpSpeed;
+            yield return null; // Pause here and carry on next frame
+        }
+    }
     
     // Controls the water ball for throwing: lerp the start position to target position using specified animation curve to move the waterball object
-
     IEnumerator ThrowCoroutine(Vector3 target)
     {
         float lerp = 0;

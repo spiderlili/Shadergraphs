@@ -19,6 +19,7 @@ public class WaterBall : MonoBehaviour
     public void Throw(Vector3 target)
     {
         StopAllCoroutines();
+        StartCoroutine(ThrowAnimation());
         StartCoroutine(ThrowCoroutine(target));
     }
 
@@ -40,12 +41,19 @@ public class WaterBall : MonoBehaviour
             yield return null; // Pause here and carry on next frame
         }
     }
+
+    IEnumerator ThrowAnimation()
+    {
+        waterBenderAnimator.SetTrigger("ThrowWaterBall");
+        yield return new WaitForSeconds(1f);
+    }
     
     // Controls the water ball for throwing: lerp the start position to target position using specified animation curve to move the waterball object
     IEnumerator ThrowCoroutine(Vector3 target)
     {
         float lerp = 0;
         Vector3 startPos = transform.position;
+        
         
         while (lerp < 1) {
             transform.position = Vector3.Lerp(startPos, target, speedAnimationCurve.Evaluate(lerp)); // Evaluate gives the corresponding value at time(lerp)

@@ -44,7 +44,7 @@ Material:
     - Vector1_67c8f9d7bbba4750bfd9a4f172fd61a9: 0
     - _AlphaMultiplier: 0.6
     - _NormalStrength: 0.19
-    - _Smoothness: 0.5
+    - _Smoothness: 0.9
     m_Colors:
     - Color_e7f99cd6c65145e08271d58042312329: {r: 0, g: 0, b: 0, a: 0}
     - Color_ebfb2ec0cfd24984ab3d43acc5de9ac4: {r: 0, g: 0, b: 0, a: 0}

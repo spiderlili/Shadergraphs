@@ -102,7 +102,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _AnimationSpeed: 0.12
+    - _AnimationSpeed: 0.1
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -111,7 +111,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DistortAmount: 0.02
+    - _DistortAmount: 0.005
     - _DistortedNormalStrength: 0.5
     - _DstBlend: 0
     - _EnvironmentReflections: 1

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28502667, g: 0.37139323, b: 0.49600998, a: 1}
+  m_IndirectSpecularColor: {r: 0.2018263, g: 0.28283092, b: 0.39684576, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -238,6 +238,63 @@ Transform:
   m_Father: {fileID: 348420454}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &122890184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 335657124}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+      propertyPath: m_Name
+      value: Standing 1H Cast Spell 01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
 --- !u!1 &256985699
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +339,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5ddb16898ee054040bdae538bfab02b3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 5ddb16898ee054040bdae538bfab02b3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 5ddb16898ee054040bdae538bfab02b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.78
       objectReference: {fileID: 0}
@@ -321,6 +386,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 5ddb16898ee054040bdae538bfab02b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c990769bea8044d6f8e88e8692e4af3b, type: 2}
     - target: {fileID: -927199367670048503, guid: 5ddb16898ee054040bdae538bfab02b3, type: 3}
       propertyPath: m_Name
       value: rockprocgen
@@ -449,7 +518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644586739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 2.46, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 785698666}
@@ -740,6 +809,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1add54f6284f43b8ad83fcdc339da87, type: 3}
+--- !u!1 &1309317371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c87bd2ec38d034faa915432f3b8c5aa5, type: 3}
+  m_PrefabInstance: {fileID: 122890184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1309317373
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309317371}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70676db2ee7c14bebbddbfed7c893080, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1363760843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1478,10 @@ PrefabInstance:
       propertyPath: splashPrefab
       value: 
       objectReference: {fileID: 4722677576977569659, guid: d1add54f6284f43b8ad83fcdc339da87, type: 3}
+    - target: {fileID: 6869682843946489917, guid: f14d41e9be4cc409983bc7eeb3a77ca3, type: 3}
+      propertyPath: waterBenderAnimator
+      value: 
+      objectReference: {fileID: 1309317373}
     - target: {fileID: 6869682843946489917, guid: f14d41e9be4cc409983bc7eeb3a77ca3, type: 3}
       propertyPath: stopThrowDistanceThresholdFromTarget
       value: 1

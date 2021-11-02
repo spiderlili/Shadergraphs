@@ -13,6 +13,7 @@ public class WaterBall : MonoBehaviour
     [SerializeField] private float stopThrowDistanceThresholdFromTarget = 0.4f;
     [SerializeField] private float spillWaterOnHitAngleThreshold = 30f;
     [SerializeField] private float scaleUpSpeed = 1.0f;
+    [SerializeField] private Animator waterBenderAnimator;
     
     // Start the throw animation
     public void Throw(Vector3 target)
@@ -25,6 +26,7 @@ public class WaterBall : MonoBehaviour
     public void ScaleUp()
     {
         StartCoroutine(ScaleUpCoroutine());
+        waterBenderAnimator.SetTrigger("RaiseWaterBall");
     }
 
     IEnumerator ScaleUpCoroutine()

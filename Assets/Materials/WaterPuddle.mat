@@ -56,7 +56,7 @@ Material:
     - Vector1_cdc7ed99026b45b2b6defe364c7cf018: 0
     - Vector1_ddb6293edce643b0ad001ef8e4bfe970: 0
     - Vector1_f64f7fc51f514d1fa0c302cd1c54ace5: 0
-    - _Alpha: 0.5
+    - _Alpha: 0.2
     - _Distortion: 0.05
     - _NormalStrength: 1
     - _NormalTiling: 1

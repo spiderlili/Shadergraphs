@@ -81,7 +81,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
-    - _AnimationSpeed: 0.2
+    - _AnimationSpeed: 0.5
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -91,7 +91,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _Dissolve: 0.5
-    - _Distortion: 0.03
+    - _Distortion: 0.1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _FresnelPower: 5
@@ -108,13 +108,13 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.6
+    - _Smoothness: 0.31
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _UseParticleSystemDissolve: 1
-    - _VertexDisplacement: 0.05
+    - _VertexDisplacement: 0.1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -122,7 +122,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
+    - _SpecularColor: {r: 2.9960785, g: 0, b: 0.2509804, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &902032711814821933
 MonoBehaviour:

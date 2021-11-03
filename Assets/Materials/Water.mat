@@ -116,7 +116,7 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _FoamNoise: 1
-    - _FoamSpreadFactor: 0.8
+    - _FoamSpreadFactor: 0.65
     - _FresnelStrength: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
